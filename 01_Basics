@@ -13,7 +13,7 @@ CREATE TABLE students (
 );
 
 
--- *********************
+-- **************************************************
 
 INSERT INTO students (name, age, email, city)
 VALUES
@@ -23,7 +23,7 @@ VALUES
 ('Priya', 22, 'priya@gmail.com', 'Bengaluru'),
 ('Rohan', 20, 'rohan@gmail.com', 'Patna');
 
--- ************************88
+-- ***********************************************
 -- update_data.sql
 
 -- Display all records
@@ -57,7 +57,7 @@ SELECT COUNT(*) AS total_students
 FROM students;
 
 
--- **************************8
+-- **************************************************8
 
 -- Update a student's city
 UPDATE students
@@ -68,3 +68,19 @@ WHERE name = 'Aarav';
 UPDATE students
 SET age = 22
 WHERE name = 'Rahul';
+
+-- ************************************************
+
+-- Delete a student
+DELETE FROM students
+WHERE name = 'Rohan';
+
+-- ************************************************
+
+-- Remove all records but keep the table
+TRUNCATE TABLE students;
+
+-***********************************************
+
+-- Delete the table permanently
+DROP TABLE students;
