@@ -20,4 +20,4 @@ This repository contains my PostgreSQL learning journey.
 - pgAdmin 4
 
 ## Author
-Aanvi
+Riya Rani
