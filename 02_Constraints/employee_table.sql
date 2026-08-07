@@ -1,0 +1,9 @@
+CREATE TABLE employee (
+    e_id SERIAL PRIMARY KEY,
+    fName VARCHAR(50) NOT NULL,
+    lName VARCHAR(50) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    dept VARCHAR(50),
+    salary DECIMAL(10, 2) DEFAULT 30000.00,
+    hire_date DATE NOT NULL DEFAULT CURRENT_DATE
+);
