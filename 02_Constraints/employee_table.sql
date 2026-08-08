@@ -48,3 +48,7 @@ VALUES (DEFAULT, 'Sneha', 'Roy', 'sneha@gmail.com', 'IT', 62000, DEFAULT);
 
 INSERT INTO employee
 VALUES (DEFAULT, 'Karan', 'Malhotra', 'karan@gmail.com', 'Marketing', 51000, DEFAULT);
+
+SELECT * 
+FROM employee
+WHERE dept IN ('IT', 'Marketing');
